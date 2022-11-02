@@ -21,3 +21,10 @@ provider "google-beta" {
   project = var.project_id
   region  = var.region
 }
+
+module "storage" {
+  source = "../../modules"
+
+  project_id = var.project_id
+  region = var.region
+}
