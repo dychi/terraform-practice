@@ -8,3 +8,7 @@ variable "region" {
   type        = string
   default     = "asia-northeast1"
 }
+
+variable "gcp-creds" {
+  default= ""
+}
