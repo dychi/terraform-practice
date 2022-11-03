@@ -1,15 +1,15 @@
 on:
   push:
     paths:
-    - terraform/envs/dev/**
+    - terraform/**
     branches:
       - main
   pull_request:
     paths:
-    - terraform/envs/dev/**
+    - terraform/**
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'Dev Terraform'
     runs-on: ubuntu-latest
     defaults:
       run:
